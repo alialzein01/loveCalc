@@ -1,1 +1,2 @@
-# loveCalc
+## Geek's Love Calculator
+### An android mobile app that computes the love percentage between the developer and the programming language, and includes a result table and image that varies according to the selected language.
