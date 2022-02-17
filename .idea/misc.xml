@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/pc/AndroidStudioProjects/GeeksLoveCalculator/app/src/main/res/drawable-anydpi/ic_down.xml" value="0.2703125" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/GeeksLoveCalculator/app/src/main/res/drawable-anydpi/ic_downCircle.xml" value="0.2703125" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/GeeksLoveCalculator/app/src/main/res/drawable/custom.xml" value="0.13796296296296295" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/GeeksLoveCalculator/app/src/main/res/drawable/customspinner.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/GeeksLoveCalculator/app/src/main/res/drawable/style_spinner.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/GeeksLoveCalculator/app/src/main/res/drawable/style_spinner2.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/GeeksLoveCalculator/app/src/main/res/drawable/style_spinner3.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/GeeksLoveCalculator/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/GeeksLoveCalculator/app/src/main/res/layout/color_spinner_layout.xml" value="0.19701086956521738" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/GeeksLoveCalculator/app/src/main/res/layout/colorspinnerlayout.xml" value="0.19701086956521738" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/GeeksLoveCalculator/app/src/main/res/layout/spinner_dropdown_layout.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
