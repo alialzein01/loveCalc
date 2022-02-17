@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             table.addView(row);
         }
         counter++;
-        img.animate().translationYBy(-2000).rotation(3600).setDuration(500);
+        img.animate().translationYBy(-2000).rotation(3600).setDuration(550);
     }
 
     @Override
