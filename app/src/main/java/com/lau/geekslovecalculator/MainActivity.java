@@ -7,6 +7,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     TableLayout table;
     private ArrayList<List<String>> array;
     int counter;
+    ImageView img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         sp.setOnItemSelectedListener(this);
         table = findViewById(R.id.table1);
         array = new ArrayList<List<String>>();
+        img = findViewById(R.id.img);
     }
 
     public void showRes(View v) {
@@ -52,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             String text = sp.getSelectedItem().toString();
             String n = name.getText().toString();
             tempArr.add(sp.getSelectedItem().toString());
-            tempArr.add(Integer.toString(res)+"%");
+            tempArr.add(Integer.toString(res) + "%");
             array.add(tempArr);
             if (res < 26) {
                 results.setText(n + " + " + text + " = " + res + "% \n\" Run away from it :( \"");
@@ -63,8 +66,23 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             } else {
                 results.setText(n + " + " + text + " = " + res + "% \n\" There's chemistry :) \"");
             }
+            if (sp.getSelectedItem().toString().equalsIgnoreCase("java")) {
+                img.setImageResource(R.drawable.java);
+            } else if (sp.getSelectedItem().toString().equalsIgnoreCase("python")) {
+                img.setImageResource(R.drawable.python);
+            } else if (sp.getSelectedItem().toString().equalsIgnoreCase("C")) {
+                img.setImageResource(R.drawable.letterc);
+            } else if (sp.getSelectedItem().toString().equalsIgnoreCase("C++")) {
+                img.setImageResource(R.drawable.cpp);
+            } else if (sp.getSelectedItem().toString().equalsIgnoreCase("C#")) {
+                img.setImageResource(R.drawable.csharp);
+            } else if (sp.getSelectedItem().toString().equalsIgnoreCase("swift")) {
+                img.setImageResource(R.drawable.swift);
+            }
+            img.setTranslationY(2000);
+            insertTab();
         }
-        insertTab();
+
     }
 
     private void closeKeyboard() {
@@ -81,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             for (int j = 0; j < array.get(i).size(); j++) {
                 TextView t = new TextView(this);
                 t.setText(array.get(i).get(j).toString());
-                t.setPadding(50,20,20,20);
+                t.setPadding(50, 20, 20, 20);
                 t.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
                 t.setTextSize(18);
                 row.addView(t);
@@ -89,6 +107,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             table.addView(row);
         }
         counter++;
+        img.animate().translationYBy(-2000).rotation(3600).setDuration(500);
     }
 
     @Override
